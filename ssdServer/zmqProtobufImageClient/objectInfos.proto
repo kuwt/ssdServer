@@ -1,0 +1,14 @@
+package proto;
+
+message objectInfos {
+    message objectInfo {
+    optional int32 objClass = 1;
+	optional float score = 2;
+	optional int32 tlx = 3;
+	optional int32 tly = 4;
+	optional int32 brx = 5;
+	optional int32 bry = 6; 
+    }
+    
+    repeated objectInfo infos = 1;
+}
